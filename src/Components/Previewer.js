@@ -1,9 +1,14 @@
 import React from "react";
 
-const Previewer = () => {
+const Previewer = props => {
+    
+
     return (
         <div className="right-side">
-            <div id="preview"></div>
+            <button onClick={props.click}>click</button>
+            <p id="preview" >{props.value}</p>
         </div>
     )
 }
+
+export default Previewer;
