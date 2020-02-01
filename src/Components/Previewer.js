@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useMemo} from "react";
 import marked from "react-markdown";
+import renderer from "react-markdown";
 
-const Previewer = props => {
-    
-   
+const Previewer = (props) => {
+
     return (
         <div>
-            <p id="preview" dangerouslySetInnerHTML={props.dangerouslySetInnerHTML}></p>
+            <p id="preview" dangerouslySetInnerHTML={{__html: marked(props.markdown)}}></p>
         </div>
     )
 }
