@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import Textarea from "./Textarea";
-import Previewer from "./Previewer";
 import Markdown from "react-markdown";
-//import './App.css';
+import "../css/App.css";
 
 const placeholder = `# Welcome to my React Markdown Previewer! 
 ## Here are some cool stuff that you can do:
