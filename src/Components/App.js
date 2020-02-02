@@ -49,12 +49,12 @@ function App() {
    let ContentMarkdown = text;
 
   return (
-    <div>
-      <h1>Markdown Previewer</h1>
+    <div style={{margin: 40}}>
+      <h1 className="title">Markdown Previewer</h1>
       <div className="container">
         <Textarea markdown={text} onChange={handleChange}/>
         <div className="rigth-side">
-          <div id="preview">
+          <div id="preview" className="displayMarkdown">
           <Markdown escapeHtml={true} source={ContentMarkdown}/>
           </div>
         </div>

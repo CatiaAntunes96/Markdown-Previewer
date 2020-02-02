@@ -1,0 +1,29 @@
+.left-side {
+    width: 500px;
+}
+
+textarea {
+    width: 90%;
+    height: 400px;
+    margin: 30px;
+    background-color: #101010b5;
+    font-size: 14px;
+    color: #3BB6C6;
+    padding: 13px;
+    text-align: justify;
+    outline: none;
+    resize: none;
+    box-shadow: 4px 4px 5px 0px rgba(106,106,106,1);
+    border-style: none;
+}
+
+@media screen and (max-width: 1200px)  {
+    .left-side {
+        align-self: center;
+    }
+    textarea {
+        width: 80%;
+        height: 300px;
+        margin: 20px;
+    }
+}
